@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejemplo09_Introducir datos desde teclado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            
+            var edad = prompt("Introduce tu edad", "Introduce aquí tu edad"); //metodo con texto customizable que devuelve un string
+            
+            if (edad==null){ //miramos si has clicado en cancelar, para decirte que no has introducido nada.
+                document.write("No has introducido nada");
+            }else{
+                document.write("Tu Edad es " + edad + " años");
+                
+                if (edad >= 18){
+                document.write("<br/>Eres mayor de edad");
+                }else{
+                document.write("<br/>Eres menor de edad");
+            }
+            }
+            
+                
+            
+            
+            
+        </script>
+    </body>
+</html>

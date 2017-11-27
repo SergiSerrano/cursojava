@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Menus desplegables</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="contenedor"></div>
+            <h2>Mis peliculas favoritas</h2>
+            <form id="formulario" name="formulario" method="post" action="data.php">
+                <h3>Selecciona las peliculas de tu coleccion</h3>
+                <select name="pelicula" id="peliculas" multiple="multiple"  size="9">
+                    <option value="17">Platoon</option>
+                    <option value="18" disabled="disabled">El buscavidas</option>
+                    <option value="19">El cazador</option>
+                    <option value="110">Perros</option>
+                    <option value="111">Hola</option>
+                    <option value="121">Madree</option>
+                    <option value="127">Padres</option>
+                    <option value="218">Amigos</option>
+                    <option value="92">Pues si</option>
+ 
+                </select>
+                <h3>Selecciona tu pelicula favorita</h3>
+                <select name="pelicula1" id="pelicula1">
+                    <option value="1">El Padrino</option>
+                    <option value="2">Comisario</option>
+                    <option value="3" disabled="disabled">Angeles</option>
+                    <option value="4">Pedro</option>
+                    <option value="5">Amigos</option>
+                    <option value="6">Noche de amor</option>
+                    <option value="7">De verdad</option>
+                    <option value="8">La vida</option>
+                    <option value="9">Que hace</option>
+
+                </select>
+                <br/>
+                <center><input type="submit" name="btn_submit" id="111" value="Enviar"/></center>
+            </form>
+    </body>
+</html>

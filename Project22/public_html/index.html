@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Radios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="contenedor">
+            <h2 id="encabezado">Encuesta: mejor película, actor y director</h2>
+            <form id="formulario1" name="formulario1" method="post" action="data.php">
+                <h3>Mejor Película</h3>
+                <input type="radio" name="pelicula" value="1"                       />El Padrino<br/>
+                <input type="radio" name="pelicula" value="2" checked="checked"     />El crepúsculo de los dioses<br/>
+                <input type="radio" name="pelicula" value="3"                       />Doce hombres sin piedad<br/>
+                <input type="radio" name="pelicula" value="4"                       />Anatomia de un asesinato<br/>
+                <h3>Mejor Actor</h3>
+                <input type="radio" name="actor"    value="5"                       />Marlon Brando<br/>
+                <input type="radio" name="actor"    value="6"                       />John Wayne<br/>
+                <input type="radio" name="actor"    value="7" checked="checked"     />Henry Fonda<br/>
+                <input type="radio" name="actor"    value="8"                       />James Stewart<br/>
+                <h3>Mejor Director</h3>
+                <input type="radio" name="director" value="9"                       />Francis Ford Coppola<br/>
+                <input type="radio" name="director" value="10"                      />John Ford<br/>
+                <input type="radio" name="director" value="11"                      />Sidney Lumet<br/>
+                <input type="radio" name="director" value="12" checked="checked"    />Otto Preminger<br/>
+
+                <br/>
+                <center><input type="submit" name="btn_submit" id="111" value="Enviar"/></center>
+            </form>
+
+            
+        </div>
+    </body>
+</html>

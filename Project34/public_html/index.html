@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Autocompletado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Nuevos elementos en HTML5</h2>
+        <div id="contenedor">
+            <h4>Cuadro de texto con autocompletado</h4>
+            <form name="formulario" action="data.php" method="post">
+                Actores:<input type="text" list="actores">
+                <datalist id="actores">
+                        <option value="Penelope Cruz">
+                        <option value="Paul Newman">
+                        <option value="Antonio Banderas">
+                        <option value="Javier Barden">
+                        <option value="James Dean">
+                </datalist>
+                <br/><br/>
+                <input type="submit" value="Enviar Datos">
+            </form>
+        </div>
+    </body>
+</html>

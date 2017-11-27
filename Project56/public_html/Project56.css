@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-nov-2017, 14:15:35
+    Author     : clickdo
+*/
+
+table{
+    font: 12px Arial, sans-serif;
+    border: 2px solid #000;
+}
+
+th{
+    color: #fff;
+    background: #333;
+    border: 1px solid #000;
+    width: 100px;
+    padding:2px 5px;
+}
+
+td{
+    border: 1px solid #000;
+}
+

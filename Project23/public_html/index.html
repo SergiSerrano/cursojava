@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Utilizar CheckBox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script language="javascript" type="text/javascript"> 
+            
+            function deseleccionar(){
+                for(var i=1;i<12;i++){
+                    
+                    document.getElementById(i).checked=false;
+                } 
+            }
+
+            function seleccionartodo(){
+                for(var j=1;j<12;j++){
+                    
+                    document.getElementById(j).checked=true;
+                }
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <div id="contenedor">
+            <h2 id="encabezado">Selecciona las peliculas que no hayas visto</h2>
+            <form id="formulario1" name="formulario1" method="post" action="data.php">
+               <input type="checkbox" name="opcion1"  id="1" value="1" checked=checked       />El Padrino<br/>
+               <input type="checkbox" name="opcion2"  id="2" value="2"                       />El crepusculo<br/>
+               <input type="checkbox" name="opcion3"  id="3" value="3"                       />La sirenita<br/>
+               <input type="checkbox" name="opcion4"  id="4" value="4" checked="checked"     />El Rey Leon<br/>
+               <input type="checkbox" name="opcion5"  id="5" value="5"                       />Pocahontas<br/>
+               <input type="checkbox" name="opcion6"  id="6" value="6"                       />Blancanieves<br/>
+               <input type="checkbox" name="opcion7"  id="7" value="7"                       />Rompe Ralf<br/>
+               <input type="checkbox" name="opcion8"  id="8" value="8" checked="checked"     />Big Hero<br/>
+               <input type="checkbox" name="opcion9"  id="9" value="9"                       />Buscando a Nemo<br/>
+               <input type="checkbox" name="opcion10" id="10" value="10"                     />Robin Hood<br/>
+               <input type="checkbox" name="opcion11" id="11" value="11"                     />Aladdin<br/>
+
+               <br/>
+               <input type="button" name="btn_deselect" id="100" value="Deseleccionar todo" onclick="deseleccionar(form)"/>
+               <input type="button" name="btn_selectAll" id="101" value="Seleccionar todo" onclick="seleccionartodo(form)"/>
+               <input type="submit" name="btn_submit" id="111" value="Enviar"/>
+
+            </form>
+        </div>
+    </body>
+</html>

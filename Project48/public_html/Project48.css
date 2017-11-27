@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-nov-2017, 13:25:26
+    Author     : clickdo
+*/
+
+.tituloprincipal{
+    color: blue;
+    font-family: "Comic Sans MS", Verdana, Arial, Sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.titulosecundario{
+    color: rgb(0,0,255);
+    font-family: Vivaldi, Arial, Sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.descripcion{
+    color: black;
+    font-family: Webdings, Sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.listado{
+    color: #999999;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: lighter;
+}

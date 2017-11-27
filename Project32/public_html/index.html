@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tratamientos de cadenas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            
+            var cadena = "La gata sobre el tejado de zinc";
+            
+            document.write ("Cadena de texto: "+cadena+"<br/>");
+            document.write ("Longitud de la cadena de texto: "+cadena.length+"<br/>");
+            
+            var pos=cadena.indexOf("gata");
+            document.write("Posiscion de la primera aparicion de la palabra 'gata': " +pos+ "<br/>");
+            
+            var subcadena = cadena.substring(0,15); //subcadena
+            document.write("Subcadena: " + subcadena + "<br/>");
+            document.write("Conversion de la cadena en enlace: " + cadena.link("http://www.google.es") + "<br/>");
+            document.write("Tamaño de la fuente grande: " + cadena.big() + "<br/>");
+            document.write("Tamaño de la fuente pequeña: " + cadena.small() + "<br/>");
+            document.write("Cadena de texto en cursvia: " + cadena.italics() + "<br/>");
+            document.write("Cadena de text tachado: " + cadena.strike() + "<br/>");
+                    
+
+            
+        </script>
+    </body>
+</html>

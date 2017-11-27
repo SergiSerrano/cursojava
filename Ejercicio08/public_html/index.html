@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio08</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <script language="javascript" type="text/javascript" src="funciones.js"></script>
+        <script language="javascript" type="text/javascript">
+            var matrizcodigo = new Array();
+            var matrizdescripcion = new Array();
+            var matrizimporte = new Array();
+            
+            var codigo=0;
+            var descripcion=0;
+            var importe=0;
+            
+            
+
+        </script>
+            
+            
+            
+            
+        
+    </head>
+    <body>
+
+            <form class=formulario id="formulario" name="formulario" method="post" action="data.php" onsubmit="return grabar(this)"> 
+            
+                <label for="codigo">Código:</label>
+                <input type="text" name="nombre" id="codigo" value="" readOnly="true"/>  
+                <br/>
+                <label for="descripcion">Descripción:</label>
+                <input type="text" name="descripcion" id="descripcion" value="" readOnly="true"/>
+                <br/>
+                <label for="importe">Importe:</label>
+                <input type="text" name="importe" id="importe" value="" readOnly="true"/> 
+                
+                
+                <br/><br/>
+                <input type="button" id="boton1"  value="Introducir Datos" onclick="Introducir_Datos()">
+                <input type="button" id="boton2" value="Grabar" disabled=disabled onclick="grabar()">
+                <input type="button" id="boton3" value="Mostrar Valor en tabla" disabled=disabled onclick="Mostrar_Valor()">
+                <input type="button" id="boton4" value="Salir" onclick="Salir()">
+                
+            </form>    
+                
+                <br/><br/>
+                
+                
+                <div id="contenedor"></div>
+
+    </body>
+</html>
+

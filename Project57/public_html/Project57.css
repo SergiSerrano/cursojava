@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-nov-2017, 14:15:35
+    Author     : clickdo
+*/
+
+table{
+    
+    font: 12px Arial, sans-serif;
+    border: 3px solid #000;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+.tituloprincipal{
+    color: #000;
+    font: small-caps lighter 24px Verdana, Arial, Sans-serif;
+    letter-spacing: 3px;
+    border-top: 1px dotted #333;
+}
+
+.titulosecundario{
+    border: 1px solid black;
+    padding: 10px;
+    
+    height: 50px;
+    background: pink;
+    overflow: auto;
+    resize: both;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 500px;
+    background-image: url("picture01.jpg");
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;   
+    
+}
+
+.descripcion{
+    color: #666;
+    font: 14px Arial, Sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 160px;
+}
+
+.listado {
+    border: 1px solid #333;
+    color: #666;
+    font: italic 14px Georgia, "Times New Roman", serif;
+    word-spacing: 2px;
+    line-height: 150%;
+    padding: 20px 50px 40px 80px;
+}

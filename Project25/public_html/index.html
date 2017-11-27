@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Agrupaciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="contenedor">
+            <h2>Peliculas agrupadas por genero</h2>
+            <form id="formulario1" name="formulario1" method="post" action="data.php">
+                <select name="peliculas" id="peliculas">
+                    <optgroup label="Bélicas" disabled="disabled">
+                        <option value="17">Platoon</option>
+                        <option value="38">Apocalypse</option>
+                        <option value="28">Armageddon</option>
+                        <option value="18">Cazador</option>
+                    </optgroup>
+                
+                    <optgroup label="Western">
+                        <option value="127">Bueno el feo y el malo</option>
+                        <option value="328">por un millon de dolares</option>
+                        <option value="238">Rio rojo</option>
+                        <option value="158">La diligencia</option>
+                    </optgroup>
+                    
+                    <optgroup label="Comedia">
+                        <option value="157">apartamento</option>
+                        <option value="368">primera planta</option>
+                        <option value="278">Pepinos</option>
+                        <option value="148">La risa</option>
+                    </optgroup>
+
+                </select>
+                <br/>
+                <center><input type="submit" name="btn_submit" id="111" value="Enviar"/></center>
+                    
+            </form>
+
+            
+        </div>
+
+
+    </body>
+</html>

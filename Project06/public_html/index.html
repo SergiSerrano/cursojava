@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejemplo06_Condicionantes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script> //no hace falta poner toda la parrafada porque por defecto el lenguaje usado es Javascript.
+            
+             var Nombre = "Sergi";
+                 if (Nombre == "Sergi"){ //igual al valor
+                     document.write("Se ha introducido el nombre Sergi <br/>");
+                 }
+             var Curso = "Java EE";
+                 if (Curso === "Java EE"){ //igual al valor y al tipo
+                     document.write("El Cruso se llama JAVA EE. <br/>");
+                 }
+             var temperatura = 39;
+                 if (temperatura > 37.5){ //mayor que
+                     document.write("La temperatura es alta. <br/>");
+                 }
+                 
+             var Nada = 0;
+                 if (Nada < 1){ //menor que
+                     document.write("Número Menor de 1 o negativo <br/>");
+                 }
+             var Edad = 18;
+                 if (Edad >= 18){//mayor o igual que
+                     document.write("¡Ya puedes votar!<br/>");
+                 }
+             var Edad = 17;
+                 if (Edad <= 17){ //menor o igual que
+                     document.write("Eres menor de edad. <br/>");
+                    
+                 }
+             var value = 0;
+                 if (value != 1){ //no es igual a 
+                     document.write("El operando es diferente al valor. <br/>");
+                 }
+        </script>
+    </body>
+</html>

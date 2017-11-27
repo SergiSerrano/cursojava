@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-nov-2017, 13:57:54
+    Author     : clickdo
+*/
+
+body{
+    background: brown;
+}
+#titulo{
+    font-size: 50px;
+    font-family: Impact;
+    font-weight: bold;
+    color:yellow;
+}
+
+#datos_personales{
+    background: purple;
+    font-family: Verdana;
+    
+}
+
+#datos_financieros{
+    background: aqua;
+       
+}
+
+.tituloDatos{
+    color: yellowgreen;
+    font-family: Verdana;
+    font-weight: 800;
+    background: black;
+}
+
+.camposDatosPersonales{
+    color: white;
+}
+.botones{
+    background: yellow;
+    font-weight: bold;
+}
+.botoneliminar{
+    background: yellow;
+    
+    font-weight: bold;
+}

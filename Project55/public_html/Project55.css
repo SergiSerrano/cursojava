@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-nov-2017, 13:25:26
+    Author     : clickdo
+
+font-style: italic;
+*/
+
+body{
+    background-color: grey;
+    background-image: url('grass.png');
+    background-repeat: no-repeat;
+}
+
+.tituloprincipal{
+    color: green;
+    font: 24px lighter italic small-caps Arial;
+    text-decoration: underline;
+    text-transform: lowercase;
+    letter-spacing: 25px;
+    line-height: 500%;
+    text-indent: 100px;
+    text-shadow: -1px 1px 2px #666;
+    
+}
+
+.titulosecundario{
+    color: rgb(0,0,255);
+    font-family: Vivaldi, Arial, Sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration:line-through;
+}
+
+.descripcion{
+    color: black;
+    font-family: Webdings, Sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: overline;
+    word-spacing: 20px;
+}
+
+.listado{
+    color: black;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    line-height: 200%;
+}

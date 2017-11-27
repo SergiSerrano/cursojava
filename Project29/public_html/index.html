@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 29</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <script language="javascript" type="text/javascript"> 
+        
+            function Opera01(){
+
+                var Varia01=0;
+                var Varia02=0;
+                var Varia03=0;
+                
+                document.FrontPage_Form1.Precio01.value=0;
+                document.FrontPage_Form1.PrecioP01.value=0;
+                
+                if(document.FrontPage_Form1.Categoria01[0].checked){
+                  
+                    document.FrontPage_Form1.Cvalor.value=0;
+                    Varia01 = document.FrontPage_Form1.Cpulsaciones.value;
+                    Varia02 = document.FrontPage_Form1.PrePulsa.value;
+                    Varia03 = Math.round(Varia01*Varia02);
+                    document.FrontPage_Form1.Precio01.value = Varia03;
+                   
+                    
+                    
+                }else if(document.FrontPage_Form1.Categoria01[1].checked){
+                    document.FrontPage_Form1.Cpulsaciones.value=0;
+                    Varia01=document.FrontPage_Form1.Cvalor.value;
+                    Varia02=document.FrontPage_Form1.PrePulsa.value;
+                    Varia03=Math.round(Varia01/Varia02);
+                    document.FrontPage_Form1.PrecioP01.value = Varia03;
+                   
+                    
+                }
+            }
+    </script>
+
+    </head>
+    <body>
+        <form name="FrontPage_Form1">
+            <input type="hidden" name="PrePulsa" value=10 />
+            <table width="549" height="80" border="0" cellspacing="1">
+                <tr>
+                    <td>
+                        <input name="Categoria01" type="radio" value="1" checked="checked" />
+                        Pulsaciones
+                    </td> 
+                    <td>
+                        <input name="Cpulsaciones" type="text" value="0" size="9" maxlength="10" id="CalP" />
+                    </td>
+                    <td width="135">
+                        Valor monetario. :
+                    </td>
+                    <td width="125">
+                        <input name="Precio01" type="text" size="14" maxlength="10"  disabled="true"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input name="Categoria01" type="radio" value="2" />
+                        Valor en Dolares :
+                    </td>
+                    <td>
+                        <input name="Cvalor" type="text" value="0" size="9" maxlength="10" id="CalV" />
+                    </td>
+                    <td>
+                        Valor Pulsaciones:
+                    </td>
+                    <td>
+                        <input name="PrecioP01" type="text" disabled="true" id="PrecioP01" size="14" maxlength="10" />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td width="172" height="33" bgcolor="#3399FF">
+                        <input name="Operaciones01" type="button" value="Realizar Conversion" onclick="Opera01()"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejemplo_15_Ampliando Array con push</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            
+            var grados = [8,10,12,30,40,10,9,35,1,3]; //declaracion e iniciacion de matriz.
+            
+            document.write("Array Longitud: " + grados.length + "<br/>");
+            grados.push(-1, -10); //agrega valores a la matriz.
+            
+            
+                        
+            for (x in grados){ //for que inicializa a 0 la varaible x, y recorre toda la matriz
+                document.write("Iteraccion " + x + ": ");
+                document.write(grados[x] + "<br/>");
+            }
+        
+        
+        document.write ("<br/>Array Longitud despues de PUSH: " + grados.length + "<br/>");
+            
+            </script>
+            
+            
+                
+    </body>
+</html>

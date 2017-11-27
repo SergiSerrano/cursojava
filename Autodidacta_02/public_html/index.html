@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Piedra Papel Tijera</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" type="text/javascript">
+
+                function jugar(piedra,papel,tijeras){
+                    
+                    /*var piedra=piedra;
+                    var papel=papel;
+                    var tijeras=tijeras;
+                    */
+             
+                    var random=Math.round(Math.random()*10);
+                    //si random es 1-2-3 el enemigo ha sacado piedra
+                    //si random es 4-5-6 el enemigo ha sacado papel
+                    //si random es 7-8-9 el enemigo ha sacado tijeras
+                    //si random es 0. volvemos a generar numero random
+                    
+                    
+                    
+                    while (random==0){ //bucle para conseguir un valor entre 1 y 9.
+                        random=Math.round(Math.random()*10);
+                    }
+                    if (piedra){                                        //si hemos elegido piedra
+                        if ((random>=1) && (random<=3)){        //el enemigo ha sacado piedra
+                        document.write("PIEDRA VS PIEDRA = EMPATE");
+                        
+                        }else if ((random>=4) && (random<=6)){   //el enemigo ha sacado papel
+                        document.write("PIEDRA VS PAPEL = PIERDES");
+                        }else{                                          //el enemigo ha sacado tijeras
+                            document.write ("PIEDRA VS TIJERAS = GANAS");
+                        }
+                       
+                    }else if(papel){                                    //si hemos elegido papel
+                        if ((random>=1) && (random<=3)){         //el enemigo ha sacado piedra
+                        document.write("PAPEL VS PIEDRA = GANAS");
+                        
+                        }else if ((random>=4) && (random<=6)){  //el enemigo ha sacado papel
+                        document.write("PAPEL VS PAPEL = EMPATE");
+                        }else{                                          //el enemigo ha sacado tijeras
+                            document.write ("PAPEL VS TIJERAS = PIERDES");
+                        }
+                    }else{                                              //si hemos elegido tijeras
+                       
+                        if ((random>=1) && (random<=3)){        //el enemigo ha sacado piedra
+                            document.write("TIJERAS VS PIEDRA = PIERDES");
+                        
+                        }else if ((random>=4) && (random<=6)){   //el enemigo ha sacado papel
+                        document.write("TIJERAS VS PAPEL = GANAS");
+                        }else{                                          //el enemigo ha sacado tijeras
+                            document.write ("TIJERAS VS TIJERAS = EMPATE");
+                        }
+                    }
+                    
+                    
+                  
+                    
+                }
+                
+                
+                
+                
+        </script>  
+       
+        
+    </head>
+    <body>
+        <center>
+
+            <h1>PIEDRA PAPEL O TIJERAS</h1><br/><br/>
+            <h3>Elige uno</h3>
+            
+                <input type="image" name="btn_imagen" id="piedra" src="images/piedra.png" onclick="jugar(true,false,false)"/>
+                <input type="image" name="btn_imagen" id="papel" src="images/papel.png" onclick="jugar(false,true,false)"/> 
+                <input type="image" name="btn_imagen" id="tijeras" src="images/tijeras.png" onclick="jugar(false,false,true)"/> 
+       
+        
+
+    
+
+       </center>     
+    </body>
+</html>

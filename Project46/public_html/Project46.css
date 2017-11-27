@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-nov-2017, 12:53:05
+    Author     : clickdo
+*/
+
+.tituloprincipal{
+    color:blue;
+}
+.titulosecundario{
+    color: rgb(0,0,255);
+}
+.descripcion{
+    color: black;
+}
+    
+.listado{
+    color: #999999
+}  
+  

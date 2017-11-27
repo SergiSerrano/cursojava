@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Recoger datos htmk desde javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" type="text/javascript">
+            
+            function FuncionId(){
+                
+                var Nombre;
+                var Apellidos;
+                Nombre = document.getElementById('nombre').value; //recoge el valor del ID y lo pone en la variable
+                Apellidos = document.getElementById('apellidos').value;
+                alert(Nombre + " " + Apellidos);
+                document.getElementById('nombre').value="";
+                document.getElementById('apellidos').value="";
+                document.getElementById("para").style.backgroundColor = "#99FFFF"; //utiliza color azul
+                document.getElementById('para').style.fontWeight = "bold";
+                document.getElementById('Cabecera').innerHTML = "<h5>Datos anteriores borrados</h5>";
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="Cabecera">
+            Por favor, escribe tu nombre y apellidos  
+        </div>
+        <br/><br/>
+        Nombre  :   <input type="text" id="nombre" />
+        <br/>
+        Apellidos: <input type="text" id="apellidos" />
+        <input type="button" value="Buscar" onclick="FuncionId()" />
+        <p id="para"> Soy alumno del curso Java. </p>
+
+    </body>
+</html>

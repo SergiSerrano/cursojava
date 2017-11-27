@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Ejercicio05.css"/>
+        <script type="text/javascript" src="Funciones.js"></script>
+    </head>
+    <body>
+        <form name="Formulario01">
+            <h1 id="titulo">CSS</h1>
+            <fieldset id="datos_personales">
+                <legend class="tituloDatos">Datos Personales</legend>
+                    <label class="camposDatosPersonales" for="labelnombre"> Nombre: </label><br/>
+                    <input type="text" name="nombre" id="nombre" value="Antonio Jesus" readOnly="enabled"><br/>
+                    <label class="camposDatosPersonales" for="apellidos">Apellidos:</label><br/>
+                    <input type="text" name="apellidos" id="apellidos" value="Garcia Almagro" readOnly="enabled"/><br/>
+                    <label class="camposDatosPersonales" for="profesion">Profesión:</label><br/>
+                    <input type="text" name="profesion" id="profesion" value="Ingeniero Superior" readOnly="enabled"/><br/>
+                    <label class="camposDatosPersonales" for="edad">Edad:</label><br/>
+                    <input type="text" name="edad" id="edad" size="2" maxlength="2" value="45" readOnly="enabled"/><br/>
+            </fieldset>
+            <fieldset id="datos_financieros">
+                <legend class="tituloDatos">Datos Financieros</legend>
+                <label for="Entidad">Entidad Bancaria:</label><br/>
+                <input type="text" name="EntidadB" title="Introduzca Nombre Banco" id="entidad" value="La Caixa" readOnly="enabled"><br/>
+                <label for="TipoCliente">Tipo Cliente:</label><br/>
+                <input type="text" name="TipoCliente" id="Tclientes" value="B" readonly="enabled"/><br/>
+            </fieldset>
+            
+            
+            <center>
+                <input  class="botones" onclick="javascript:window.close()" type="button" value="Cerrar" id="eli01i" title="Haga clic aquí para cerrar la ventana."/>
+                <input  class="botoneliminar" name="Eli02" type="button" value="Eliminar" id="eli02i" title="Pulsa esta opcion para eliminar un registro..." onclick="Eliminar01()"/>
+                <input  class="botones" name="Eli03" type="button" value="Modificar" id="eli03i" title="Pulsa esta opcion para modificar." onclick="Modificar01()"/>
+                <input  class="botones" name="Eli04" type="button" value="Grabar en Base" id="eli04i" title="Pulsa esta opcion para Grabar." onclick="Grabar01()"/>
+                <input  class="botones" name="Eli05" type="button" value="Abrir Nueva ventana" id="eli05i" title="Pulsa esta opcion para abrir una ventana" onclick="Aventana01()"/>
+                <input  class="botones" name="Eli06" type="button" value="Cerrar Ventana con FireFox" id="eli06i" title="Pulsa esta opcion para cerrar ventana" onclick="Cventana01()"/>
+                <input  class="botones" name="Eli07" type="button" value="Introducir Nuevos Datos." id="eli07i" title="Pulsa esta opcion para introducir nuevos datos" onclick="Nuevos01()"/>      
+            </center>
+
+        </form>
+    </body>
+</html>

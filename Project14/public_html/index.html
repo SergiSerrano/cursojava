@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Matrices Dinamicas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            
+            //ARRAY NOMBRES
+            var Nombres = new Array();
+            Nombres[0] = "Alicia";
+            Nombres[1] = "Paco";
+            Nombres[2] = "Maria";
+            Nombres[3] = "Pepe";
+            Nombres[4] = "Carlos";
+            Nombres.sort(); //ordena la matriz segun por orden alfabetico o numerico.
+            for (var i=0; i<Nombres.length; i++){
+                document.write(Nombres[i]);
+                document.write("<br/>");
+            }
+            document.write("Longitud Matriz: " + Nombres.length);
+            document.write("<br/><br/>");
+            
+            //Array NUMEROS
+            var Numeros = new Array("9","5","7");
+            
+            Numeros.sort(); //ordenamos la matriz. en este caso numericamente
+             for (var j=0; j<Numeros.length; j++){
+                document.write(Numeros[j]);
+                document.write("<br/>");
+            }
+            document.write("Longitud Matriz: " + Numeros.length);
+          
+        </script>
+    </body>
+</html>

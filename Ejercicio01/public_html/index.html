@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio06</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <script language="javascript" type="text/javascript">
+        
+        function funciones(){
+            
+            funcion01(); //funcion 1 da nombre y apellidos en la misma linea
+            funcion02(); //funcion 2 da domicilio en primera linea, y Codigo Postal y poblacion en la segunda linea
+            funcion03(18,666253687); //funcion 3 da edad en una linea y telefono en la segunda linea
+            funcion04(); //funcion 4 hace la media de 5 notas.
+            
+        }
+        function funcion01(){ //FUNCION 1 - NOMBRE Y APELLIDOS
+            
+            var nombre = "Sergi";
+            var apellidos = "Serrano Garcia";
+        
+            document.write("Nombre y Apellidos: " + nombre + " " + apellidos);
+        }
+        
+        function funcion02(){ //FUNCION 2 - domicilio en primera linea. Codigo Postal y poblacion en segunda linea
+            
+            var domicilio = "C/Pepito Palotes 2, 5ºC";  
+            var codigo_postal = "08080";
+            var poblacion = "Granollers";
+        
+            document.write("<br/>Domicilio: " + domicilio);
+            document.write("<br/>Codigo Postal: " + codigo_postal + " - Población: " + poblacion);
+        }
+        
+        function funcion03(edad,telefono){ ////FUNCION 3 - Da edad en una linea y telefono en la segunda linea
+
+            this.edad=edad;
+            this.telefono = telefono;
+            
+            document.write("<br/>Edad: " + edad + " años.");
+            document.write("<br/>Teléfono: " + telefono);
+        }
+        
+        function funcion04(){ //FUNCION 4 - Hace la media de 5 notas.
+            
+            var nota01 = 1;
+            var nota02 = 2;
+            var nota03 = 3;
+            var nota04 = 4;
+            var nota05 = 5;
+            var medianotas = (nota01+nota02+nota03+nota04+nota05)/5;
+            
+            document.write("<br/><strong>NOTAS </strong> <br/> Nota 1: " + nota01 + "<br/>Nota 2: " + nota02 + "<br/> Nota 3: " + nota03 + "<br/> Nota 4: " + nota04 + "<br/> Nota 5: " + nota05);
+            document.write("<br/>La media de las 5 notas introducidas es: " + medianotas);
+            
+        }
+        </script>
+        
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">                           
+
+        document.write("<strong>EJERCICIO DE 4 FUNCIONES </strong><br/>");
+        
+        funciones();
+
+       </script> 
+    </body>
+</html>

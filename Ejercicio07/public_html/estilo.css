@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-nov-2017, 12:39:40
+    Author     : clickdo
+*/
+
+body{
+    background: grey;
+    font-family: Helvetica;
+    
+    
+}
+.tabla1{
+    width: 500px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: white;
+}
+
+table th{
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    background: yellow;
+    font-variant: small-caps;
+}
+.tabla1 td{
+    border: 2px solid black;
+    text-align: center;
+}
+.importe{
+    text-align: right;
+    font-family: Impact;
+}
+
+
+.importecaro{
+    text-align: right;
+    color: red;
+    font-family: Impact;
+
+}
+
+.tabla2{
+    width: 500px;
+    
+    border-collapse: collapse;
+    background: grey;
+    
+}
+.totalcompras{
+    font-size: 15px;
+    font-weight: bold;
+    width: 90px;
+    background: aqua;
+    border: 2px solid black;
+    text-align: center;
+}
+.totalimporte{
+    font-size: 15px;
+    font-weight: bold;
+    width:100px;
+    text-align: center;
+    background: aqua;
+    border: 2px solid black;
+    
+}
+
+.valortotalcompras{
+    background: white;
+    border: 2px solid black;
+    text-align: center;
+}
+.valortotalimporte{
+    font-family: Impact;
+    background: white;
+    border: 2px solid black;
+    text-align: center;
+}

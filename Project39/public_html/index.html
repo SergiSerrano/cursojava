@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Estructuras de control en JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            
+            body {
+                padding: 20px;
+                font-size: 25px;
+                font-family:helvetica;
+            }
+
+        </style>
+        <script type="text/javascript">
+            //condicionantes multiples
+            var valor1=40;
+            var valor2=20;
+            var aprobado=true;
+            
+            if (valor1 >= valor2){
+                if (aprobado){
+                    document.write("La variable valor1 es mayor que valor2 y aprobado es true<br/><br/>");
+                }else{
+                    document.write("La variable valor1 es mayor que valor2 y aprobado es false<br/><br/>");
+                }
+                    
+            }
+            else{
+                document.write("La variable valor1 es menor que valor2<br/><br/>");
+            }
+            
+            
+            if((aprobado) && (valor2>30) ){
+                document.write("La variable aprobado es true y valor2 es mayor de 30<br/><br/>");
+            }else{
+                if((!aprobado) && (valor2<30)){
+                    document.write("La variable aprobado es false y valor2 es menor de 30<br/><br/>");
+                }else{
+                    if (aprobado){
+                        document.write("La variable aprobado es true y valor2 es menor de 30<br/><br/>");
+                    }else{
+                        document.write("La variable aprobado es false yu valor2 es mayor de 30<br/><br/>");  
+                    }   
+                }         
+            }
+                   
+            //------------------------------------------------
+            var diaSemana="martes";
+            var edad=43;
+            switch (diaSemana){
+                case "lunes": if(edad<35){
+                    alert("El precio de la entrada es de 2€");
+                }else{
+                    alert("El precio de la entrada es de 5€");
+                    break;
+                }
+                case "martes": if (edad<=25){
+                        alert("El precio de la entrada es de 2€");
+                }else if ((edad>25) && (edad<50)){
+                        alert("El precio de la entrada es de 5€");
+                    }else{
+                        alert("El precio de la entrada es de 7€");
+                    }
+                    break;
+                case "miercoles": if (edad<=18){
+                        alert("El precio de la entrada es de 3€");
+                    }else if ((edad>18) && (edad<50)){
+                        alert("El precio de la entrada es de 5€");
+                    }else{
+                        alert("El precio de la entrada es de 8€");
+                    }
+                    break;
+                case "jueves": if (edad<18){
+                        alert("El precio de la entrada es de 5€");
+                    }else{
+                        alert("El precio de la entrada es de 10€");
+                    }
+                    break;
+                default:malert("El precio de la entrada es de 10€");
+
+                }
+
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("dia semana: " + diaSemana + "<br/>");
+            document.write("Edad: " + edad + "<br/>");
+        </script>
+        
+        
+        
+    </body>
+</html>

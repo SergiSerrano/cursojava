@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-nov-2017, 13:25:26
+    Author     : clickdo
+
+font-style: italic;
+*/
+
+body{
+    background: pink;
+}
+@font-face{
+    font-family: mifuente;
+    src:    url("fuentes/mifuente.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: ka1;
+    src:    url("fuentes/ka1.ttf") format("truetype");
+}
+@font-face{
+    font-family: Alien;
+    src:    url("fuentes/Alien-Encounters-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: Fluo;
+    src:    url("fuentes/Fluo Gums.ttf") format("truetype");
+}
+@font-face{
+    font-family: buble;
+    src:    url("fuentes/bubble & soap.ttf") format("truetype");
+}
+
+
+.tituloprincipal{
+    color: black;
+    font-family: Fluo;
+    
+}
+
+.titulosecundario{
+    color: rgb(0,0,255);
+    font-family: mifuente;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: small-caps;
+    
+}
+
+.descripcion{
+    color: black;
+    font-family: buble;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.listado{
+    color: black;
+    font-family: ka1;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+}
